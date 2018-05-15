@@ -2,11 +2,11 @@ Integrator "iispt"
 Sampler "sobol" "integer pixelsamples" 1
 
 Scale -1 1 1
-Rotate 83.2 0.999 0.034 -0.029
-Translate -1.69 6.38 2.52
+Rotate 146 0.432 0.716 -0.548
+Translate -4.75 -0.44 1.4
 
 
-Camera "perspective" "float fov" 80
+Camera "perspective" "float fov" 85
 
 WorldBegin
 
@@ -117,7 +117,7 @@ MakeNamedMaterial "shelfobject"
         "rgb Kt" [ 0 0 0 ] 
         "rgb opacity" [ 1 1 1 ] 
 MakeNamedMaterial "wardrobe" 
-        "float roughness" [ 0.9 ]
+        "float roughness" [ 0.0104080001 ] 
         "float index" [ 1 ] 
         "string type" [ "uber" ] 
         "rgb Kd" [ 0.067780003 0.067780003 0.067780003 ] 
@@ -143,8 +143,6 @@ MakeNamedMaterial "woodwall"
         "rgb opacity" [ 1 1 1 ] 
 
 AttributeBegin
-    AreaLightSource "area" 
-            "rgb L" [ 80 80 80 ]
     NamedMaterial "largelamp"
     Shape "trianglemesh" 
             "integer indices" [ 0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 
@@ -168,8 +166,6 @@ AttributeEnd
 # Name "Cube.016"
 
 AttributeBegin
-    AreaLightSource "area" 
-            "rgb L" [ 80 80 80 ]
     NamedMaterial "largelamp"
     Shape "trianglemesh" 
             "integer indices" [ 0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 
@@ -400,6 +396,8 @@ AttributeEnd
 # Name "Cube.008"
 
 AttributeBegin
+    AreaLightSource "area" 
+            "rgb L" [ 800 800 800 ] 
     NamedMaterial "lampemission"
     Shape "trianglemesh" 
             "integer indices" [ 0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 
@@ -1158,6 +1156,5 @@ AttributeBegin
             -0.494599998 0 -0.869099975 -0.494599998 0 -0.869099975 -0.494599998 0 -0.869099975 
             0 -1 0 0 -1 0 ] 
 AttributeEnd
-
 
 WorldEnd
