@@ -2,10 +2,12 @@ Integrator "path"
 Sampler "sobol" "integer pixelsamples" 1
 
 Scale -1 1 1
-Translate -0.511604 0.331946 -0.42031
-Rotate 99.1467 0.979655 0.153549 -0.129223
+Rotate 125 0.46 -0.59 0.65
+Translate 3.7 -2.4 -0.09
 
-Camera "perspective" "float fov" 91.6
+
+
+Camera "perspective" "float fov" 44.4
 
 WorldBegin
 
@@ -71,7 +73,7 @@ MakeNamedMaterial "grey"
 
 AttributeBegin
     AreaLightSource "area" 
-            "rgb L" [ 8 8 8 ] 
+            "rgb L" [ 80 80 80 ] 
     NamedMaterial "area"
     Shape "trianglemesh" 
             "integer indices" [ 0 1 2 0 2 3 4 5 6 4 6 7 8 9 10 8 10 11 12 13 14 
