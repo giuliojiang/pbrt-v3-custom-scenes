@@ -1,4 +1,4 @@
-Integrator "iispt"
+Integrator "path"
 Sampler "sobol" "integer pixelsamples" 1
 
 Scale -1 1 1
@@ -117,13 +117,10 @@ MakeNamedMaterial "shelfobject"
         "rgb Kt" [ 0 0 0 ] 
         "rgb opacity" [ 1 1 1 ] 
 MakeNamedMaterial "wardrobe" 
-        "float roughness" [ 0.9 ]
-        "float index" [ 1 ] 
-        "string type" [ "uber" ] 
-        "rgb Kd" [ 0.067780003 0.067780003 0.067780003 ] 
-        "rgb Ks" [ 0.390976995 0.390976995 0.390976995 ] 
-        "rgb Kt" [ 0 0 0 ] 
-        "rgb opacity" [ 1 1 1 ] 
+        "string type" "plastic"
+        "rgb Kd" [ 0.01 0.01 0.01 ]
+        "rgb Ks" [ 0.3 0.3 0.3 ]
+        "float roughness" [ 0.0001 ]
 MakeNamedMaterial "wardrobechrome" 
         "float roughness" [ 0.0104080001 ] 
         "float index" [ 1 ] 
