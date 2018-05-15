@@ -1,1 +1,5 @@
 *.blend1
+*.mtl
+*.obj
+exp.pbrt
+out.exr
